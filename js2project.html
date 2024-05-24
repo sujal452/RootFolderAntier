@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .main{
+
+            height: 50vh;
+            width: 50vw;
+         
+
+            border: 2px solid black;
+
+        }
+        .flex{
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .avial{
+           
+            margin: 20px;
+            height: 100px;
+            width: 100px;
+        }
+        
+        
+        
+    </style>
+
+    
+
+</head>
+<body>
+      
+    <table>
+        <tr>
+            <td colspan="2" align="center">  <center><H1>E-Shop</H1></center></td>
+        </tr>
+        <tr>
+            <td>
+                <h3 style="display: flexbox;">Available</h3>
+            </td>
+            <td>
+                <h3>Purchase</h3>
+            </td>
+        </tr>
+        
+        <tr>
+<td>
+    <select name="" id="ava" multiple>
+        <option value="pen">PEN</option>
+        <option value="ink">INK</option>
+        <option value="gel">GEL</option>
+    </select>
+</td>
+<td>
+    <select name="" id="pur" multiple>
+    </select>
+
+</td>
+        </tr>
+<tr>
+
+    <td>
+        <input type="button" name="button" value=">" onclick="show()">
+    </td>
+    <td>
+        <input type="button" name="button" value="<" onclick="show2()">
+
+    </td>
+</tr>
+<tr>
+    <td colspan="2">
+        <label for="#cou">Count:</label>
+        <input type="text"  name="count" id="cou">
+    </td>
+</tr>
+<tr>
+    <td colspan="2">
+        <label for="#bil">BILL:</label>
+        <input type="text" name="bill" id="bil">  
+    </td>
+</tr>
+    </table> 
+</body>
+</html>
+<script>
+var b=0;
+function show(){
+avail=document.getElementById("ava")
+pur=document.getElementById("pur")
+newitem=document.createElement("option")
+newitem.text= avail.options[avail.selectedIndex].text
+pur.add(newitem)
+cou.value=pur.length;
+if(newitem.text=="PEN")
+b=b+10;
+else if(newitem.text=="INK")
+b=b+20;
+else
+b=b+30;
+bil.value=b;
+}
+function show2(){
+pur=document.getElementById("pur")
+newitem.text=pur.options[pur.selectedIndex].text
+pur.remove(pur.selectedIndex)
+cou.value=pur.length;
+if(newitem.text=="PEN")
+b=b-10;
+else if(newitem.text=="INK")
+b=b-20;
+else 
+b=b-30;
+bil.value=b;
+}
+
+
+
+
+
+</script>

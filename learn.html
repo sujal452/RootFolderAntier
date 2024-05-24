@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1> <center>String Method </center> </h1>
+
+        <label for="name">Enter Name</label>
+    <input type="text" id="t1">
+    <br/> <br/>
+    <label for="name">Result</label>
+    <input type="text" id="t2">
+    <br/>
+    <br/>
+    <input type="button" value="Uppercase" onclick="show1()">
+    <input type="button" value="Lowercase" onclick="show2()">
+    <input type="button" value="Length" onclick="show3()">
+    <br/><br/>
+    <input type="button" value="Index" onclick="show4()">
+    <input type="button" value="CharLoc" onclick="show5()">
+    <input type="button" value="repert" onclick="show6()">
+<br/><br>
+<input type="button" value="Trim" onclick="show7()">
+    <input type="button" value="startswith" onclick="show8()">
+    <input type="button" value="Endwith" onclick="show9()">
+    <br><br>
+    <input type="button" value="Substr" onclick="show10()">
+    <input type="button" value="substring" onclick="show11()">
+
+
+</body>
+</html>
+
+<script>
+    function show1()
+    {
+     var x= document.getElementById("t1").value;
+     
+     document.getElementById("t2").value=x.toUpperCase();
+
+    }
+    function show2()
+    {
+     var x= document.getElementById("t1").value;
+     
+     document.getElementById("t2").value=x.toLowerCase();
+
+    }
+    function show3()
+    {
+     var x= document.getElementById("t1").value;
+     
+    document.getElementById("t2").value=x.length();
+
+    }
+    function show4()
+    {
+     var x= document.getElementById("t1").value;
+     
+     document.getElementById("t2").value=x.indexOf('a');
+
+    }
+    function show5()
+    {
+     var x= document.getElementById("t1").value;
+     
+     document.getElementById("t2").value=x.CharAt('j');
+
+    }
+    function show6()
+    {
+     var x= document.getElementById("t1").value;
+     
+     document.getElementById("t2").value=x.repeat('6');
+
+    }
+    function show7()
+    {
+     var x= document.getElementById("t1").value;
+     
+     document.getElementById("t2").value=x.trim();
+
+    }
+    function show8()
+    {
+     var x= document.getElementById("t1").value;
+     
+     document.getElementById("t2").value=x.startsWith('su');
+
+    }
+    function show9()
+    {
+     var x= document.getElementById("t1").value;
+     
+     document.getElementById("t2").value=x.endsWith('al');
+
+    }
+    function show10()
+    {
+     var x= document.getElementById("t1").value;
+     
+     document.getElementById("t2").value=x.substr(2,3);
+
+    }
+    function show11()
+    {
+     var x= document.getElementById("t1").value;
+     
+     document.getElementById("t2").value=x.substring(2,8);
+
+    }
+
+</script>
+

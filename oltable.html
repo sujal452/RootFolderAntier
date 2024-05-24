@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            text-align: center;
+            background-color: rgb(0, 30, 255);
+            width: 200px;
+            height: 150px;
+            
+        }
+        #email1{
+
+        }
+          
+    </style>
+</head>
+<body>
+    <main>
+       <fieldset> 
+        
+        
+            <caption>LOGIN</caption>
+            <br>
+            <br>
+            <!-- <label for="#email1">Email :</label> -->
+            <input type="email"  placeholder="LOGIN"   name="email" id="email1">
+            <br>
+            <br>
+            <!-- <label for="#pass">PASSWORD :</label> -->
+            <input type="password" placeholder="PASSWORD" name="password" id="pass">
+            <br>
+            <br>
+            <div id="div2">
+            </div>
+            <input type="button" value="submit" name="SUBMIT" onclick="show()">
+        </fieldset>
+
+        
+    </main>
+    
+</body>
+</html>
+
+<script>
+    var c=3;
+ function show(){
+if(email1.value=="a@a.a" && pass.value=="123")
+{
+    div2.textContent="You are Logged IN";
+}
+else
+{
+  if(c>0){
+    c--;
+    div2.textContent="You have " + (c) + " Chances left!!";
+    
+}
+else{
+  email1.style.display="none";
+}
+}
+
+
+
+
+
+
+ }
+
+
+
+
+
+
+
+
+
+</script>
